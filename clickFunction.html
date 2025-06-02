@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Function</title>
+</head>
+<body>
+    <center>
+    <p id="btn">This is Original Text</p>
+    <button onclick="changeText()">Click</button>
+    
+    <script>
+
+
+
+        function changeText() {
+            document.getElementById("btn").textContent = "You Click The Button";
+        }
+
+
+
+        document.querySelector("button").addEventListener('mouseover', function() {
+         
+            document.querySelector('#btn').textContent = "You are on The Button";
+        });
+
+
+        document.querySelector("button").addEventListener('mouseleave', function() {
+         
+            document.querySelector('#btn').textContent = "You Leave The Button";
+        });
+
+        
+        document.querySelector("body").style.backgroundcolor="red";
+    </script>
+    </center>
+</body>
+</html>
